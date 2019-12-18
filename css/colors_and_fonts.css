@@ -1,20 +1,20 @@
 body {
     font-family: Optima, sans-serif;
-    background-color: silver;
+    background-color:#F5DA81;
 }
 a:link {
-    color: #055;
+    color:Violet;
 }
 a:visited {
-    color: #404;
+    color:Violet;
 }
 header {
     text-align: center;
-    color: white;
-    background-color: #055;
+    color:#FFFF00 ;
+    background-color: #F6CEF5;
 }
 header h1 {
-    color: #FFFF00;
+    color:#00FFFF;
     font-size: 250%;
 }
 header h2 {
@@ -23,7 +23,7 @@ header h2 {
 }
 #sitenav {
     color: white;
-    background-color: #404;
+    background-color:#D0A9F5;
 }
 #sitenav ol {
     font-size: 90%;
@@ -40,10 +40,10 @@ header h2 {
     text-decoration: none;
 }
 #sitenav li a:hover {
-    color: #DDDD00;
+    color: #2E2EFE
 }
 #main {
-    background-color: #055;
+    background-color: #F5A9BC;
 }
 .content {
     background-color: white;
@@ -54,9 +54,9 @@ header h2 {
 }
 #sidebar h3 {
     font-size: 100%;
-    color: white;
+    color:#EFEFFB;
     font-weight: normal;
-    background-color: #404;
+    background-color:#FAAC58 ;
 }
 #sidebar ol {
     background-color: white; 
@@ -71,15 +71,19 @@ header h2 {
     color: #055;
 }
 #sidebar li a:hover {
-    color: #404;
+    color: violet;
 }
 footer {
-    background-color: #404; 
+    background-color: #9A2EFE; 
     color: white;
 }
 footer p {
     font-size: 85%;
 }
 footer p a:link, footer p a:visited {
-    color: #DDDD00;
+    color: #E3CEF6;
+}
+
+image:hover{
+	border: 1px solid red;
 }
