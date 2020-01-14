@@ -2,6 +2,14 @@ body {
     margin: 0;
     padding: 0;
 }
+img {
+    width:100%;
+ 
+    max-width: 960px;
+
+   height:auto;
+}
+
 header h1, header h2 {
     margin: 0;
 }
@@ -9,14 +17,14 @@ header h1, header h2 {
     padding: 1em 5em;
 }
 .content h3 {
-    margin-top: 0;
-}
+    margin-top: 0;                    
+}                                         
 #sitenav ol {
-    padding: 0;
-    margin: 0;
-    display: inline;
+    padding: 0;                          
+    margin: 0;                   
+    display: inline;                     
 }
-#sitenav li {
+#sitenav li {                            
     display: inline;
     padding-left: 1em;
     margin-left: 1em;
@@ -55,3 +63,60 @@ footer {
 footer p {
     margin: 0em; 
 }
+@media (max-width: 600px) {
+ #sidebar {visibility:hidden;
+ padding: 0;
+}
+
+@media (max-width: 600px) {
+	#media {
+		padding: 0;
+	    }
+    #silinder {
+		visibility: hidden;
+	}
+	
+	/* 3
+	thead tr {
+		display: none;
+	
+	}
+	*/
+	
+  td {
+	  display: block;
+	  position: relative;
+	  padding-left: 30%;
+  }
+  
+  td:nth-of-type(1):before {content: "Name; "}
+ td:nth-of-type(2):before {content: "Description "}
+ td:nth-of-type(3):before {content: "More Info "}
+  
+ 
+  td:before {
+	  position: absolute;
+	  top: 1px;
+	  left: 2px;
+	  padding-right:20px;
+  }
+}
+
+thead tr{
+	display: none;
+}
+
+tr:nth-of-type(odd) {background:
+lightgray;}
+
+  td {
+     display: block;
+     position: relative;
+     padding-left: 30%;
+  }  
+ 
+
+  
+
+
+        
