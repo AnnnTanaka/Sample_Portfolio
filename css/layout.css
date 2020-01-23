@@ -63,16 +63,15 @@ footer {
 footer p {
     margin: 0em; 
 }
-@media (max-width: 600px) {
- #sidebar {visibility:hidden;
- padding: 0;
-}
+
+ 
+
 
 @media (max-width: 600px) {
-	#media {
+	#main {
 		padding: 0;
 	    }
-    #silinder {
+    #sidebar {
 		visibility: hidden;
 	}
 	
