@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Expansion</title>
+  <style>
+    /* styles for layout */
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.center {
+      width: 800px;
+    }
+
+    /* styles for colors and fonts */
+    .answer {
+      color: rgb(253, 76, 76);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <h3>Programming STEM Project - [Expansion]</h3>
+    <p>
+      
+    </p>
+    <topic>Expansion Formula</topic>
+    <Problem>Calculate the X </Problem>
+    <p>
+      INPUT:&nbsp;(<input type="number" placeholder="a" id="input1"> + &nbsp;(<input type="number" placeholder="b" id="input2">) 
+    <select name="power" id="power">
+    <option value ="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+      <input type="button" onclick="getInput()" value="GO"><br>
+   
+       OUTPUT:&nbsp;<span id="output1" class="answer"></span> 
+
+    </p>
+  </div>
+</body>
+<script>
+  /*
+  You can change anything on this page--HTML tags, CSS styles, JavaScript 
+  functions, etc. Do what you need to make it suitable for your STEM problem.
+  The lines of YOUR CODE are just a suggestion.
+
+  The getInput function will take user input from the p age. You should call  
+  your functions from inside the getInput function.
+  
+  The writeOutput function will write some given text to the output span on
+  the page. You can call this function with your code when you have a result.
+  */
+
+  // This function will get the text entered into the "input" text field.
+  // Then it calls another function with the input as an argument.
+  function getInput() {
+    let inputField1 = document.getElementById("input1");
+    let input1 = inputField1.value;
+    let inputField2 = document.getElementById("input2");
+    let input2 = inputField2.value;
+    let input3 = document.getElementById("power").value;
+    
+    let output =  calculate(input1,input2,input3);
+    console.log(calculate(input1, input2,input3));
+    // do something with the input
+    writeOutput (output); // <-- replace this with YOUR CODE
+  }
+
+  
+  // This function will write some text to the output span on the page.
+  function writeOutput(output1) { 
+    let outputSpan1 = document.getElementById("output1");
+    outputSpan1.innerHTML = output1;
+  }
+   
+
+  // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  YOUR CODE  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+  function calculate(input1,input2,input3) {
+    let r1,r2,r3,r4,output;
+    if (input3=="1") {
+      output = input1  + "+" +input2 + "x";
+    } else if (input3=="2") {
+      r1= input1 * input1;
+      r2= parseInt(input1) + parseInt(input2);
+      r3= input2 * input2;
+      output = r1 + "+" + r2 + "x+" + r3 + "x<sup>2</sup>" ;
+    } else if (input3=="3") {
+      r1= input1 * input1 * input1;
+      r2= 3 * input1 * input1 * input2;
+      r3= 3 * input1 * input2 * input2;
+      r4= input2 * input2 * input2;
+      output = r1 + "+" + r2 + "x+" + r3 + "x<sup>2</sup>+" + r4 + "x<sup>3</sup>" ;
+    }
+  
+    return output;
+  }
+  // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  YOUR CODE  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+
+</script>
+
+</html>
